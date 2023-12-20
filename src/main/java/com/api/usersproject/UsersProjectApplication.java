@@ -15,7 +15,7 @@ public class UsersProjectApplication {
 
 	@GetMapping("/")
 	public String index(){
-		return "Angela é linda";
+		return "Documentação da API Restful";
 	}
 
 }

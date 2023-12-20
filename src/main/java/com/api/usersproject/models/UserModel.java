@@ -1,9 +1,14 @@
 package com.api.usersproject.models;
 
-import jakarta.persistence.*;
-
 import java.io.Serializable;
 import java.util.UUID;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "USERS")
@@ -16,7 +21,7 @@ public class UserModel implements Serializable {
     private UUID id;
 
     // OUTROS ATRIBUTOS / COLUNAS NO DB
-    @Column(nullable = false, length = 80)
+    @Column(nullable = false, length = 100)
     private String name;
 
     @Column(nullable = false, unique = true, length = 50)
